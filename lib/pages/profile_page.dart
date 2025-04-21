@@ -258,6 +258,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             );
                           },
                           child: Card(
+                            color: const Color.fromARGB(255, 247, 247, 247),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12.0),
                             ),
