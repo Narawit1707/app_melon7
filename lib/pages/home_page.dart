@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pj_app/pages/select_images_page.dart'; // นำกลับมา
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'post_detail_page.dart';
 
@@ -153,7 +152,6 @@ class HomePage extends StatelessWidget {
                                   ],
                                 ),
                                 const SizedBox(height: 8),
-                                // ย้ายวันที่ไปด้านล่างสุด
                                 Text(
                                   formattedTime,
                                   style: const TextStyle(
@@ -173,16 +171,6 @@ class HomePage extends StatelessWidget {
             },
           );
         },
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const SelectImagesPage()),
-          );
-        },
-        backgroundColor: Colors.lime,
-        child: const Icon(Icons.add, color: Colors.black),
       ),
     );
   }
