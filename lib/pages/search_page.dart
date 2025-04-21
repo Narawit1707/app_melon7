@@ -23,7 +23,7 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      ackgroundColor: const Color.fromARGB(255, 252, 252, 252), // เปลี่ยนพื้นหลัง
+      backgroundColor: const Color.fromARGB(255, 252, 252, 252), // เปลี่ยนพื้นหลัง
       appBar: AppBar(
         title: const Text('Search'),
         backgroundColor: Colors.lime,
