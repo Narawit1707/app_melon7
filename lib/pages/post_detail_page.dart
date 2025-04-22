@@ -147,6 +147,11 @@ class _PostDetailPageState extends State<PostDetailPage> {
                           ),
                           const SizedBox(height: 8),
                           Text(
+                            'Category: ${post['category'] ?? 'Uncategorized'}',
+                            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                          const SizedBox(height: 8),
+                          Text(
                             post['content'] ?? '',
                             style: const TextStyle(fontSize: 16),
                           ),
@@ -164,7 +169,10 @@ class _PostDetailPageState extends State<PostDetailPage> {
                             ],
                           ),
                           const Divider(),
-                          CommentsSection(postId: widget.postId), // เพิ่มส่วนคอมเมนต์
+                          CommentsSection(
+                            postId: widget.postId,
+                            postOwnerId: post['userId'], // ส่ง userId ของเจ้าของโพสต์
+                          ),
                         ],
                       ),
                     ),

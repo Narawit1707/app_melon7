@@ -22,7 +22,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
             itemCount: widget.imageUrls.length,
             onPageChanged: (index) {
               setState(() {
-                _currentImageIndex = index; // อัปเดตดัชนีของรูปภาพปัจจุบัน
+                _currentImageIndex = index; // อัปเดตรูปภาพปัจจุบัน
               });
             },
             itemBuilder: (context, index) {
@@ -44,7 +44,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
-                '${_currentImageIndex + 1} / ${widget.imageUrls.length}', // แสดงดัชนีรูปภาพปัจจุบัน
+                '${_currentImageIndex + 1} / ${widget.imageUrls.length}', // แสดงรูปภาพปัจจุบัน
                 style: const TextStyle(color: Colors.white, fontSize: 14),
               ),
             ),
