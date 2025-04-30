@@ -102,7 +102,7 @@ class _ProfilePageState extends State<ProfilePage> {
       Navigator.of(context).pushReplacementNamed('/auth');
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Failed to log out')),
+        const SnackBar(content: Text('log out')),
       );
     }
   }
